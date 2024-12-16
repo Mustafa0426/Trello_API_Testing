@@ -19,9 +19,9 @@ namespace RestSharpT
         public void checkGetBoards()
         {
             // parameters added under braces
-            var request = requestWithAuthorization("/1/members/abdullahtariq41/boards?")
+            var request = requestWithAuthorization("/1/members/mustafatariq41/boards?")
                 .AddQueryParameter("field","id,name")
-                .AddUrlSegment("member", "abdullahtariq41");
+                .AddUrlSegment("member", "mustafatariq41");
             var response = _client.Get(request);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
